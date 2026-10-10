@@ -29,6 +29,8 @@ export async function handleReportRequest(data: ReportRequest) {
       },
     });
 
+    console.log("[handleReportRequest] Report saved to database:", report);
+
     const resend = createResendClient();
     if (!resend) {
       console.warn("[handleReportRequest] RESEND_API_KEY not set; skipping emails.");
@@ -57,6 +59,8 @@ export async function handleReportRequest(data: ReportRequest) {
       console.error("[handleReportRequest] owner email failed", ownerError);
       throw ownerError;
     }
+
+    console.log("[handleReportRequest] Owner email sent successfully to:", owner);
 
     return { success: true, data: report };
   } catch (error) {

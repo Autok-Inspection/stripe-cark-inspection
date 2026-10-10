@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CarK Inspection",
   description:
-    "Get a Certified Vehicle History Report for just $80. Get your report now. Original and Actual Vehicle History Reports. Guaranteed Safe Checkout.",
+    "Get a Certified Vehicle History Report for just $79. Get your report now. Original and Actual Vehicle History Reports. Guaranteed Safe Checkout.",
 };
 
 export default function RootLayout({

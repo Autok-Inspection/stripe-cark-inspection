@@ -39,12 +39,7 @@ export default function PricingPage() {
                 We could not find your VIN. Please submit the report form on the
                 home page first.
               </p>
-              <Button
-                asChild
-                variant="outline"
-                size="sm"
-                className="mt-3"
-              >
+              <Button asChild variant="outline" size="sm" className="mt-3">
                 <Link href="/#report">Go to report form</Link>
               </Button>
             </div>
@@ -74,19 +69,27 @@ export default function PricingPage() {
                 </div>
               ))}
             </div>
-            <Button
+
+            <Link
+              href="https://buy.stripe.com/6oUfZhdvpfhDfWR3566AM1T"
+              className="block w-full bg-custom_red hover:bg-red-700 text-white text-lg font-medium py-4 px-6 text-center rounded-xl transition-colors"
+            >
+              Get Started
+            </Link>
+
+            {/* <Button
               size="lg"
               className="w-full bg-custom_red hover:bg-red-700 text-white text-lg py-6 rounded-xl"
               onClick={() => setPaymentOpen(true)}
               disabled={!hasVin}
             >
               Get Started
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
 
-      <PaymentDialog open={paymentOpen} onOpenChange={setPaymentOpen} />
+      {/* <PaymentDialog open={paymentOpen} onOpenChange={setPaymentOpen} /> */}
       <FooterSection />
     </main>
   );

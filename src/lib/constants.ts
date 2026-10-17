@@ -34,7 +34,7 @@ export const pricing = [
   {
     id: "10201",
     plan: "Our Plan",
-    price: "$79",   
+    price: "$59",   
     features: [
       "1 Vehicle Report",
       "Vehicle Specification",
@@ -48,5 +48,5 @@ export const pricing = [
 ];
 
 export const REPORT_CURRENCY = "usd";
-export const REPORT_PRICE_CENTS = 7900; // $79
-export const REPORT_PRICE_DISPLAY = "$79";
+export const REPORT_PRICE_CENTS = 5900; // $59
+export const REPORT_PRICE_DISPLAY = "$59";
